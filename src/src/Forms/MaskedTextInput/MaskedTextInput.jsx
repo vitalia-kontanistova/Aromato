@@ -13,7 +13,6 @@ const MaskedTextInput = (props) => {
         {...field}
         {...props}
       />
-      {/*  mask={props.mask} ????? */}
       {meta.touched && meta.error ? (
         <div className={css.error}>{meta.error}</div>
       ) : null}

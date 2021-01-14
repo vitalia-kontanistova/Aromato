@@ -5,20 +5,18 @@ import { Form, Formik } from "formik";
 import CustomInput from "../CustomInput/CustomInput";
 
 const LogInForm = () => {
-  const REQUARED = "Поле обязательно для заполнения";
+  const errors = {
+    required: "Поле обязательно для заполнения",
+    email: "Почта введена некорректно",
+    pass: "Пароль должен быть хотя бы 6 символов",
+  };
 
   return (
     <Formik
       initialValues={{ email: "", password: "" }}
       validationSchema={yup.object({
-        email: yup
-          .string()
-          .email("Почта введена некорректно")
-          .required(REQUARED),
-        password: yup
-          .string()
-          .min(6, "Пароль был длинее 5 символов")
-          .required(REQUARED),
+        email: yup.string().email(errors.email).required(errors.required),
+        password: yup.string().min(6, errors.pass).required(errors.required),
       })}
       onSubmit={(values, { setSubmitting, resetForm }) => {
         setTimeout(() => {

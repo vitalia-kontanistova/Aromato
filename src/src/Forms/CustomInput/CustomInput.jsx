@@ -4,8 +4,7 @@ import { useField } from "formik";
 
 const CustomInput = (props) => {
   const [field, meta] = useField(props);
-
-  const res = (
+  return (
     <>
       <input className={css.input} {...field} {...props} />
       {meta.touched && meta.error ? (
@@ -13,10 +12,6 @@ const CustomInput = (props) => {
       ) : null}
     </>
   );
-
-  // debugger;
-
-  return res;
 };
 
 export default CustomInput;
