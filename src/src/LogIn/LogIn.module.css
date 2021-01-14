@@ -1,0 +1,35 @@
+.logIn {
+  color: #49654e;
+  padding: 85px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: 990px;
+}
+.body {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+.title {
+  font-size: 50px;
+  line-height: 59px;
+  text-align: center;
+}
+.subtext {
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  margin-top: 30px;
+}
+.subtext a {
+  color: #f65a67;
+}
+.img {
+  display: block;
+  width: 285px;
+}

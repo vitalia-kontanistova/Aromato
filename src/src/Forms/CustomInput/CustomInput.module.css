@@ -1,0 +1,28 @@
+.input {
+  width: 500px;
+  height: 40px;
+  border: 1px solid #49654e;
+  font-size: 20px;
+  line-height: 23px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: inherit;
+  margin-top: 25px;
+  background-color: #ffffff;
+}
+.input:first-child {
+  margin-top: 0;
+}
+.input::placeholder {
+  font-size: 20px;
+  line-height: 23px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #8ba889;
+}
+.error {
+  font-size: 18px;
+  color: #f65a67;
+}
