@@ -13,21 +13,7 @@ const Registration = (props) => {
         <div className={css.body}>
           <h1 className={css.title}>Регистрация</h1>
           <img src={decor} alt="" />
-
-          <RegForm />
-          {/*
-          <form className={css.form}>
-            <input type="text" placeholder="Имя" className={css.input} />
-            <input type="email" placeholder="E-mail" className={css.input} />
-            <input type="password" placeholder="Пароль" className={css.input} />
-            <input
-              type="password"
-              placeholder="Повторите пароль"
-              className={css.input}
-            />
-            <input type="submit" className={css.btn} value="Продолжить" />
-          </form>
-           */}
+          <RegForm {...props} />
           <div className={css.subtext}>
             Уже есть аккаунт? <NavLink to="/logIn">Войдите</NavLink>
           </div>

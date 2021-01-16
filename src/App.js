@@ -1,12 +1,13 @@
-import Header from "./src/Header/Header";
+import React from "react";
+import Header from "./components/Header/Header";
 import "./App.css";
-import Footer from "./src/Footer/Footer";
+import Footer from "./components/Footer/Footer";
 import { Route } from "react-router-dom";
-import LogIn from "./src/LogIn/LogIn";
-import Landing from "./src/Landing/Landing";
-import Registration from "./src/Registration/Registration";
-import Thanks from "./src/Thanks/Thanks";
-import Test from "./src/Test/Test";
+import LogIn from "./components/LogIn/LogIn";
+import Landing from "./components/Landing/Landing";
+import Thanks from "./components/Thanks/Thanks";
+import Test from "./components/Test/Test";
+import RegistrationContainer from "./components/Registration/RegistrationContainer";
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
             <LogIn />
           </Route>
           <Route path="/reg">
-            <Registration />
+            <RegistrationContainer />
           </Route>
           <Route path="/thanks">
             <Thanks />

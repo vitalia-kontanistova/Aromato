@@ -1,15 +1,24 @@
 import axios from "axios";
 
 const instance = axios.create({
-  baseURL: "https://",
+  baseURL: "http://www.libralibre.online:9000/main/",
   withCredentials: true,
-  //   headers: { "API-KEY": "104e209f-65fb-44e1-a272-296426fdf9f9" },
 });
 
 export const usersAPI = {
-  registrate(name, email, pass) {
+  getUsers() {
     return instance
-      .post(`users`, { regData: JSON.stringify({ name, email, pass }) })
+      .get(`subscriptions/VitaVitaChikaChika`)
+      .then((response) => response.data);
+  },
+  registrate(regData) {
+    return instance
+      .post(`subscriptions`, { regData })
+      .then((response) => response.data);
+  },
+  getIP() {
+    return axios
+      .get("https://api.ipify.org/?format=json")
       .then((response) => response.data);
   },
 };
