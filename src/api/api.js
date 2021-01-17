@@ -32,11 +32,15 @@ export const usersAPI = {
     if (is.opera()) return "Opera";
     if (is.safari()) return "Safari";
   },
-  setUserMetaData({ userOs, userBrowser, userIp }) {
+  sendUserMetaData(userOs, userBrowser, userIp) {
     let metaData = JSON.stringify({ userOs, userBrowser, userIp });
+    alert(metaData); // ----
+    return instance.post(`counter/VitaVitaChikaChika`, { Data: metaData });
+  },
 
-    return instance
-      .post(`counter/VitaVitaChikaChika`, { Data: metaData })
-      .then((response) => response.data);
+  sendUserData(name, email, phone) {
+    let userData = JSON.stringify({ Name: name, Email: email, Phone: phone });
+    alert(userData); // ----
+    return instance.post(`subscriptions`, userData);
   },
 };

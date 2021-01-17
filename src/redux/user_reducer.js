@@ -10,7 +10,7 @@ let initialState = {
   userBrowser: null,
 };
 
-const formReducer = (state = initialState, action) => {
+const userReducer = (state = initialState, action) => {
   switch (action.type) {
     case SET_USER_IP:
       return { ...state, userIp: action.ip };
@@ -34,10 +34,19 @@ export const setUserMetaDataThunkCreator = () => {
     usersAPI.setIP().then((responce) => {
       dispatch(setUserIp(responce.ip));
     });
-
-    // usersAPI.setUserMetaData()
-
   };
 };
 
-export default formReducer;
+export const sendUserMetaDataThunkCreator = (userOs, userBrowser, userIp) => {
+  return (dispatch) => {
+    usersAPI.sendUserMetaData(userOs, userBrowser, userIp);
+  };
+};
+
+export const sendUserDataThunkCreator = (name, email, phone) => {
+  return (dispatch) => {
+    usersAPI.sendUserData(name, email, phone);
+  };
+};
+
+export default userReducer;
