@@ -5,6 +5,7 @@ import { Form, Formik } from "formik";
 import CustomInput from "../CustomInput/CustomInput";
 import MaskedTextInput from "../MaskedTextInput/MaskedTextInput";
 
+
 const RegForm = (props) => {
   const phoneNumberMask = ["+","3","7","5"," ","(",/\d/,/\d/,")"," ",/\d/,/\d/,/\d/," ",/\d/,/\d/," ",/\d/,/\d/,];
   const phoneRegExp = /(\+375\s\()(25|29|33|44)\)\s(\d{3})\s(\d{2})\s(\d{2})/;
@@ -19,10 +20,12 @@ const RegForm = (props) => {
     // passNum: "Пароль должен содержать хотя бы одну цифру",
     // passUpper: "Пароль должен содержать хотя бы одну заглавную букву",
     confirmPass: "Пароли должны совпадать",
-  };
+  }; 
 
   return (<>
     <div>props.userIP = {props.userIp}</div>
+    <div>props.userOs = {props.userOs}</div>
+    <div>props.userBr = {props.userBr}</div>
 
     <Formik {...props}
       initialValues={{ name: "", email: "",phone: "",password: "",confirmPass: "",}}
@@ -59,8 +62,7 @@ const RegForm = (props) => {
             placeholder="Повторите пароль"
           />
           <button type="submit" className={css.btn}>
-            {" "}
-            Продолжить{" "}
+            Продолжить
           </button>
         </Form>
       )}}

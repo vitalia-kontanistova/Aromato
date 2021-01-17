@@ -1,16 +1,20 @@
 import React from "react";
 import { connect } from "react-redux";
-import { setUserIpThunkCreator } from "../../redux/form_reducer";
+import { setUserMetaDataThunkCreator } from "../../redux/form_reducer";
 import Registration from "./Registration";
 
 class RegistrationContainer extends React.Component {
   componentDidMount() {
-    this.props.setUserIp();
+    this.props.setUserMeta();
   }
 
   render() {
     return (
-      <Registration setUserIp={this.setUserIp} userIp={this.props.userIp} />
+      <Registration
+        userIp={this.props.userIp}
+        userOs={this.props.userOs}
+        userBr={this.props.userBr}
+      />
     );
   }
 }
@@ -19,10 +23,11 @@ class RegistrationContainer extends React.Component {
 
 let mapStateToProps = (state) => ({
   userIp: state.formReducer.userIp,
-  a: "aaaa",
-  b: state.formReducer.b,
+  userOs: state.formReducer.userOs,
+  userBr: state.formReducer.userBrowser,
 });
 
 export default connect(mapStateToProps, {
-  setUserIp: setUserIpThunkCreator,
+  setUserMeta: setUserMetaDataThunkCreator,
+
 })(RegistrationContainer);
