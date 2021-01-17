@@ -15,21 +15,11 @@ function App() {
       <Header />
       <div className="content">
         <div className="container">
-          <Route exact path="/">
-            <Landing />
-          </Route>
-          <Route path="/logIn">
-            <LogIn />
-          </Route>
-          <Route path="/reg">
-            <RegistrationContainer />
-          </Route>
-          <Route path="/thanks">
-            <Thanks />
-          </Route>
-          <Route path="/test">
-            <Test />
-          </Route>
+          <Route exact path="/" component={Landing} />
+          <Route path="/logIn" component={LogIn} />
+          <Route path="/reg" component={RegistrationContainer} />
+          <Route path="/thanks" component={Thanks} />
+          <Route path="/test" component={Test} />
         </div>
       </div>
       <Footer />

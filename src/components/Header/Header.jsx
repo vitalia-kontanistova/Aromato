@@ -11,7 +11,7 @@ const Header = (props) => {
             <span className={css.title}>Aromato</span>
             <span className={css.subtitle}>• Minsk •</span>
           </NavLink>
-          <NavLink to="/logIn" className={css.logIn}>
+          <NavLink to="/reg" className={css.logIn}>
             Войти
           </NavLink>
         </div>

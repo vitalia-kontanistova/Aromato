@@ -4,7 +4,8 @@ import * as yup from "yup";
 import { Form, Formik } from "formik";
 import CustomInput from "../CustomInput/CustomInput";
 
-const LogInForm = () => {
+const LogInForm = (props) => {
+  debugger;
   const errors = {
     required: "Поле обязательно для заполнения",
     email: "Почта введена некорректно",
@@ -13,6 +14,7 @@ const LogInForm = () => {
 
   return (
     <Formik
+      {...props}
       initialValues={{ email: "", password: "" }}
       validationSchema={yup.object({
         email: yup.string().email(errors.email).required(errors.required),
@@ -23,6 +25,7 @@ const LogInForm = () => {
           alert(JSON.stringify(values, null, 2));
           resetForm();
           setSubmitting(false);
+          props.history.push("/thanks");
         }, 500);
       }}
     >

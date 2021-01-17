@@ -12,7 +12,7 @@ const LogIn = (props) => {
         <div className={css.body}>
           <h1 className={css.title}>Вход</h1>
           <img src={decor} alt="" />
-          <LogInForm />
+          <LogInForm {...props} />
           <div className={css.subtext}>
             Нет аккаунта? <NavLink to="/reg">Зарегистрируйтесь</NavLink>
           </div>

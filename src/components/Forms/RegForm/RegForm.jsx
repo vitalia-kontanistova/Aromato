@@ -82,6 +82,7 @@ const RegForm = (props) => {
             props.sendUserMeta(props.userOs, props.userBr, props.userIp);
             resetForm();
             setSubmitting(false);
+            props.history.push("/thanks");
           }, 500);
         }}
       >
