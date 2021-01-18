@@ -107,7 +107,11 @@ const RegForm = (props) => {
                 name="confirmPass"
                 placeholder="Повторите пароль"
               />
-              <button type="submit" className={css.btn}>
+              <button
+                type="submit"
+                className={css.btn}
+                disabled={props.isSubmitting}
+              >
                 Продолжить
               </button>
             </Form>

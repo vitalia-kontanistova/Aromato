@@ -19,3 +19,9 @@
   color: #ffffff;
   margin-top: 40px;
 }
+
+.btn:disabled {
+  background: #cccccc;
+  outline-color: #f5f5f5;
+  color: #f5f5f5;
+}

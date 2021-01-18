@@ -8,7 +8,7 @@ const Thanks = (props) => {
   return (
     <div className={css.thanks}>
       <div className={css.body}>
-        <h1 className={css.title}>Внимание</h1>
+        <h1 className={css.title}>Спасибо</h1>
         <img src={decor} alt="" />
         <div className={css.subtext}>
           Спасибо за проявленый интерес к нашему предложению. В данный момент
