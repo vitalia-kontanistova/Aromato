@@ -1,13 +1,12 @@
 import React from "react";
-// import css from "./Test.module.css";
-import RegForm from "../Forms/RegForm/RegForm";
-import LogInForm from "../Forms/LogInForm/LogInForm";
+import css from "./Test.module.css";
 
-const Test = () => (
-  <>
-    <RegForm />
-    <LogInForm />
-  </>
-);
+const Test = () => {
+  return (
+    <div>
+      <div className={css.test}> TEST ANIMATION </div>;
+    </div>
+  );
+};
 
 export default Test;

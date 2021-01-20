@@ -1,29 +1,17 @@
-h1 {
-  font-size: 30px;
-  font-weight: 500;
-  margin: 20px;
+.test {
+  margin: 50px auto;
+  font-weight: bold;
+  font-size: 50px;
+  text-align: center;
+  color: #45844a;
+  animation: opas 2s ease-out alternate;
 }
-input {
-  border: solid;
-  margin: 10px;
-}
-.error {
-  color: red;
-}
-.select {
-  border: solid;
-  margin: 10px;
-}
-button {
-  width: 150px;
-  height: 30px;
-  background: salmon;
-}
-form {
-  display: flex;
-  flex-direction: column;
-  width: 500px;
-  margin: 0 auto;
-  justify-content: space-between;
-  align-items: center;
+
+@keyframes opas {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
 }

@@ -86,6 +86,9 @@
   width: 305px;
   text-align: center;
 }
+.animatedElem {
+  animation: changeOpasity 1s ease-out alternate;
+}
 .slider {
 }
 
@@ -182,4 +185,13 @@
 .whyBody span {
   font-size: 32px;
   line-height: 37px;
+}
+
+@keyframes changeOpasity {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
 }

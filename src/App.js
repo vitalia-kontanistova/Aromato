@@ -4,10 +4,10 @@ import "./App.css";
 import Footer from "./components/Footer/Footer";
 import { Route } from "react-router-dom";
 import LogIn from "./components/LogIn/LogIn";
-import Landing from "./components/Landing/Landing";
 import Thanks from "./components/Thanks/Thanks";
 import Test from "./components/Test/Test";
 import RegistrationContainer from "./components/Registration/RegistrationContainer";
+import LandingContainer from "./components/Landing/LandingContainer";
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
       <Header />
       <div className="content">
         <div className="container">
-          <Route exact path="/" component={Landing} />
+          <Route exact path="/" component={LandingContainer} />
           <Route path="/logIn" component={LogIn} />
           <Route path="/reg" component={RegistrationContainer} />
           <Route path="/thanks" component={Thanks} />
