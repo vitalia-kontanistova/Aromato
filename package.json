@@ -22,7 +22,7 @@
     "web-vitals": "^0.2.4",
     "yup": "^0.32.8"
   },
-  "homepage":"https://vitalia-kontanistova.github.io/",
+  "homepage":"https://vitalia-kontanistova.github.io/Aromato/",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
