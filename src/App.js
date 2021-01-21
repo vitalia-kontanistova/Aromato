@@ -15,11 +15,11 @@ function App() {
       <Header />
       <div className="content">
         <div className="container">
-          <Route exact path="/Aromato/" component={LandingContainer} />
-          <Route path="/Aromato/logIn" component={LogIn} />
-          <Route path="/Aromato/reg" component={RegistrationContainer} />
-          <Route path="/Aromato/thanks" component={Thanks} />
-          <Route path="/Aromato/test" component={Test} />
+          <Route exact path="/" component={LandingContainer} />
+          <Route path="/logIn" component={LogIn} />
+          <Route path="/reg" component={RegistrationContainer} />
+          <Route path="/thanks" component={Thanks} />
+          <Route path="/test" component={Test} />
         </div>
       </div>
       <Footer />
