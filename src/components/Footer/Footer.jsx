@@ -6,37 +6,18 @@ import { NavLink } from "react-router-dom";
 const Footer = (props) => {
   return (
     <footer className={css.footer}>
-      <div className={`${css.container} + container`}>
+      <div className={`${css.container} container`}>
         <NavLink to="/" className={css.company}>
           <span className={css.title}>Aromato</span>
           <span className={css.subtitle}>• Minsk •</span>
           <img src={decor} alt="" />
         </NavLink>
 
-        <div className={css.main}>
-          <ul className={`${css.list} + " " + ${css.menu}`}>
-            <li>
-              <NavLink to="/thanks">О проекте</NavLink>
-            </li>
-            <li>
-              <NavLink to="/thanks">Оформить подарок</NavLink>
-            </li>
-            <li>
-              <NavLink to="/thanks">Доставка и оплата</NavLink>
-            </li>
-            <li>
-              <NavLink to="/thanks">Помощь</NavLink>
-            </li>
-            <li>
-              <NavLink to="/thanks">Контакты</NavLink>
-            </li>
-          </ul>
-          <ul className={`${css.list} + " " + ${css.contacts}`}>
-            <li>test@gmail.com</li>
-            <li>+375(29)1231231</li>
-            <li>+375(29)1231231</li>
-          </ul>
-        </div>
+        <ul className={css.contacts}>
+          <li>test@gmail.com</li>
+          <li>+375(29)1231231</li>
+          <li>+375(29)1231231</li>
+        </ul>
 
         <div className={css.copyrights}>
           <img src={decor} alt="" />
