@@ -8,20 +8,18 @@
 .btn {
   width: 350px;
   height: 65px;
-  background: #fbbfbf;
-  outline: 2px solid #ffffff;
+  background: var(--dark-pink);
+  outline: 2px solid var(--white);
   outline-offset: -7px;
   font-size: 30px;
   line-height: 35px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #ffffff;
+  color: var(--white);
   margin-top: 40px;
 }
 
 .btn:disabled {
-  background: #cccccc;
-  outline-color: #f5f5f5;
-  color: #f5f5f5;
+  background: var(--grey-green);
 }

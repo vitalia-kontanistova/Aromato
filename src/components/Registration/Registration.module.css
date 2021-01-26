@@ -1,5 +1,5 @@
 .registration {
-  color: #49654e;
+  color: var(--green);
   padding: 85px 0;
   display: flex;
   justify-content: space-between;
@@ -27,7 +27,7 @@
   margin-top: 30px;
 }
 .subtext a {
-  color: #f65a67;
+  color: var(--red);
 }
 .img {
   display: block;
