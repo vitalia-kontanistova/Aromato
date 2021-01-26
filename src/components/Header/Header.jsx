@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import css from "./Header.module.css";
+import BurgerMenuContainer from "./BugerMenu/BurgerMenuContainer";
 
 const Header = (props) => {
   return (
@@ -14,6 +15,7 @@ const Header = (props) => {
           <NavLink to="/reg" className={css.logIn}>
             Войти
           </NavLink>
+          <BurgerMenuContainer {...props} className={css.burgerMenu} />
         </div>
       </div>
     </header>
