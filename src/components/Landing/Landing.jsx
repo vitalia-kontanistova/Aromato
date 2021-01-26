@@ -2,8 +2,6 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import css from "./Landing.module.css";
 
-import img from "../../assets/img/perfumes/img_1.png";
-
 import decor from "../../assets/img/decorLarge.png";
 import image from "../../assets/img/img.png";
 import arrL from "../../assets/img/arrLeft.png";
@@ -14,14 +12,6 @@ const Landing = (props) => {
   let firstPerfume = props.firstPerfume;
   let secondPerfume = props.secondPerfume;
   let thirdPerfume = props.thirdPerfume;
-
-  /* let onClickNext = () => {
-    props.setNextMonthOffer();
-    props.activateAnimation();
-    setTimeout(() => {
-      props.deactivateAnimation();
-    }, 500);
-  }; */
 
   return (
     <div className={css.landing}>
@@ -66,7 +56,6 @@ const Landing = (props) => {
         <div className={`${css.slider} + " " + ${css.blockBody}`}>
           <div className={css.perfume}>
             <div
-              // className={css.perfumeImg + " " + css.animatedElem}
               className={`${css.perfumeImg} ${
                 props.isAnimationActive ? css.animatedElem : ""
               }`}
@@ -74,7 +63,6 @@ const Landing = (props) => {
               <img src={firstPerfume.img} alt="" />
             </div>
             <div
-              // className={css.perfumeName + " " + css.animatedElem}
               className={`${css.perfumeName} ${
                 props.isAnimationActive ? css.animatedElem : ""
               }`}
@@ -84,7 +72,6 @@ const Landing = (props) => {
           </div>
           <div className={css.perfume}>
             <div
-              // className={css.perfumeImg + " " + css.animatedElem}
               className={`${css.perfumeImg} ${
                 props.isAnimationActive ? css.animatedElem : ""
               }`}
@@ -92,7 +79,6 @@ const Landing = (props) => {
               <img src={secondPerfume.img} alt="" />
             </div>
             <div
-              // className={css.perfumeName + " " + css.animatedElem}
               className={`${css.perfumeName} ${
                 props.isAnimationActive ? css.animatedElem : ""
               }`}
@@ -102,7 +88,6 @@ const Landing = (props) => {
           </div>
           <div className={css.perfume}>
             <div
-              // className={css.perfumeImg + " " + css.animatedElem}
               className={`${css.perfumeImg} ${
                 props.isAnimationActive ? css.animatedElem : ""
               }`}
@@ -110,7 +95,6 @@ const Landing = (props) => {
               <img src={thirdPerfume.img} alt="" />
             </div>
             <div
-              // className={css.perfumeName + " " + css.animatedElem}
               className={`${css.perfumeName} ${
                 props.isAnimationActive ? css.animatedElem : ""
               }`}

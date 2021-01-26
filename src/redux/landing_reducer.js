@@ -1,6 +1,14 @@
-import img1 from "../assets/img/perfumes/img_1.png";
-import img2 from "../assets/img/perfumes/img_2.png";
-import img3 from "../assets/img/perfumes/img_3.png";
+import img1_1 from "../assets/img/perfumes/1/QueenofSeductionAntonioBanderas.png";
+import img1_2 from "../assets/img/perfumes/1/MarryMeLanvin.png";
+import img1_3 from "../assets/img/perfumes/1/SoScandalJeanPaulGaultier.png";
+
+import img2_1 from "../assets/img/perfumes/2/DKNYBeDeliciousFreshBlossomEaudeIntenseDonnaKaran.png";
+import img2_2 from "../assets/img/perfumes/2/EspeciallyEscadaElixirEscada.png";
+import img2_3 from "../assets/img/perfumes/2/HerSecretGameAntonioBanderas.png";
+
+import img3_1 from "../assets/img/perfumes/3/MarryMealaFolieLanvin.png";
+import img3_2 from "../assets/img/perfumes/3/Tiffany&CoIntenseTiffany.png";
+import img3_3 from "../assets/img/perfumes/3/EspeciallyEscadaEscada.png";
 
 const SET_NEXT_MONTH_OFFER = "SET_NEXT_MONTH_OFFER";
 const SET_PREV_MONTH_OFFER = "SET_PREV_MONTH_OFFER";
@@ -11,27 +19,30 @@ let initialState = {
   offers: [
     {
       title: "Набор февраля",
-      first: { name: "first name февраля", img: img1 },
-      second: { name: "second name февраля", img: img1 },
-      third: { name: "third name февраля", img: img1 },
+      first: { name: "Queen of Seduction Antonio Banderas", img: img1_1 },
+      second: { name: "Marry Me Lanvin", img: img1_2 },
+      third: { name: "So Scandal! Jean Paul Gaultier", img: img1_3 },
     },
     {
       title: "Набор марта",
-      first: { name: "first name марта", img: img2 },
-      second: { name: "second name марта", img: img2 },
-      third: { name: "third name марта", img: img2 },
+      first: {
+        name: "DKNY Be Delicious Fresh Blossom Eau de Intense Donna Karan",
+        img: img2_1,
+      },
+      second: { name: "Especially Escada Elixir Escada", img: img2_2 },
+      third: { name: "Her Secret Game Antonio Banderas", img: img2_3 },
     },
     {
       title: "Набор апреля",
-      first: { name: "first name апреля", img: img3 },
-      second: { name: "second name апреля", img: img3 },
-      third: { name: "third name апреля", img: img3 },
+      first: { name: "Marry Me a la Folie Lanvin", img: img3_1 },
+      second: { name: "Tiffany & Co Intense Tiffany", img: img3_2 },
+      third: { name: "Especially Escada Escada", img: img3_3 },
     },
   ],
   currentMonth: "Набор февраля",
-  firstPerfume: { name: "first name", img: img1 },
-  secondPerfume: { name: "second name", img: img1 },
-  thirdPerfume: { name: "third name", img: img1 },
+  firstPerfume: { name: "Queen of Seduction Antonio Banderas", img: img1_1 },
+  secondPerfume: { name: "Marry Me Lanvin", img: img1_2 },
+  thirdPerfume: { name: "So Scandal! Jean Paul Gaultier", img: img1_3 },
   isAnimationActive: false,
 };
 
