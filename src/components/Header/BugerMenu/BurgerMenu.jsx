@@ -16,19 +16,19 @@ const BurgerMenu = (props) => {
             <NavLink to="/reg">Войти</NavLink>
           </StyledLi>
           <StyledLi>
-            <NavLink to="/main">Главная</NavLink>
+            <NavLink to="/">Главная</NavLink>
           </StyledLi>
           <StyledLi>
             <NavLink to="/offer">Предложение месяца</NavLink>
           </StyledLi>
           <StyledLi>
-            <NavLink to="/offer">Как это работает</NavLink>
+            <NavLink to="/how-it-works">Как это работает</NavLink>
           </StyledLi>
           <StyledLi>
-            <NavLink to="/offer">Как это выглядит</NavLink>
+            <NavLink to="/how-it-looks">Как это выглядит</NavLink>
           </StyledLi>
           <StyledLi>
-            <NavLink to="/offer">Зачем мне это</NavLink>
+            <NavLink to="/why">Зачем мне это</NavLink>
           </StyledLi>
           <StyledLi decorS={true}>
             <img src={decor} alt="" />

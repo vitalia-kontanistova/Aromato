@@ -23,3 +23,16 @@
 .btn:disabled {
   background: var(--grey-green);
 }
+
+@media (max-width: 570px) {
+  .form {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .btn {
+    width: 250px;
+    height: 50px;
+    font-size: 20px;
+    line-height: 23px;
+  }
+}

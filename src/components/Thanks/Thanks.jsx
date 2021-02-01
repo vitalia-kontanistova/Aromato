@@ -9,14 +9,15 @@ const Thanks = (props) => {
     <div className={css.thanks}>
       <div className={css.body}>
         <h1 className={css.title}>Спасибо</h1>
-        <img src={decor} alt="" />
+        <img className={css.decor} src={decor} alt="" />
         <div className={css.subtext}>
           Спасибо за проявленый интерес к нашему предложению. В данный момент
           проект запущен в тестовом режиме и полноценно он начнет работать в
           феврале. Мы сообщим Вам о старте продаж по электронной почте или смс.
-          <div className={css.subtext}>
-            С наилучшими пожеланиями команда AROMATO.
-          </div>
+        </div>
+        <img className={css.decor} src={decor} alt="" />
+        <div className={css.subtext}>
+          С наилучшими пожеланиями команда AROMATO.
         </div>
       </div>
       <img src={image} alt="" className={css.img} />

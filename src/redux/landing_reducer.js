@@ -14,6 +14,9 @@ const SET_NEXT_MONTH_OFFER = "SET_NEXT_MONTH_OFFER";
 const SET_PREV_MONTH_OFFER = "SET_PREV_MONTH_OFFER";
 const ACTIVATE_ANIMATION = "ACTIVATE_ANIMATION";
 const DEACTIVATE_ANIMATION = "DEACTIVATE_ANIMATION";
+const SET_CLIENT_WIDTH = "SET_CLIENT_WIDTH";
+const SHOW_FIRST_PORTION = "SHOW_FIRST_PORTION";
+const SHOW_SECOND_POTION = "SHOW_SECOND_POTION";
 
 let initialState = {
   offers: [
@@ -44,6 +47,9 @@ let initialState = {
   secondPerfume: { name: "Marry Me Lanvin", img: img1_2 },
   thirdPerfume: { name: "So Scandal! Jean Paul Gaultier", img: img1_3 },
   isAnimationActive: false,
+  clientWidth: 0,
+  isFirstPortionShown: true,
+  isSecondPortionShown: true,
 };
 
 const landingReducer = (state = initialState, action) => {
@@ -76,6 +82,12 @@ const landingReducer = (state = initialState, action) => {
       return { ...state, isAnimationActive: true };
     case DEACTIVATE_ANIMATION:
       return { ...state, isAnimationActive: false };
+    case SET_CLIENT_WIDTH:
+      return { ...state, clientWidth: document.documentElement.clientWidth };
+    case SHOW_FIRST_PORTION:
+      return { ...state, isFirstPortionShown: action.show };
+    case SHOW_SECOND_POTION:
+      return { ...state, isSecondPortionShown: action.show };
     default:
       return state;
   }
@@ -86,5 +98,9 @@ export const setPrevMonthOffer = () => ({ type: SET_PREV_MONTH_OFFER });
 
 export const activateAnimation = () => ({ type: ACTIVATE_ANIMATION });
 export const deactivateAnimation = () => ({ type: DEACTIVATE_ANIMATION });
+
+export const setClientWidth = () => ({ type: SET_CLIENT_WIDTH });
+export const showFirstPortion = (show) => ({ type: SHOW_FIRST_PORTION, show });
+export const showSecondPortion = (show) => ({ type: SHOW_SECOND_POTION, show });
 
 export default landingReducer;

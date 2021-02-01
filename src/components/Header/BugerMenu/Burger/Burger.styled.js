@@ -10,7 +10,7 @@ export const StyledBurger = styled.button`
   flex-direction: column;
   justify-content: space-between;
   cursor: pointer;
-  z-index: 5;
+  z-index: 20;
 
   div {
     width: 40px;
@@ -18,6 +18,7 @@ export const StyledBurger = styled.button`
     background: ${colors.white};
     transition: all 0.3s ease-out;
     transform-origin: 12% 50%;
+    z-index: 20;
 
     :first-child {
       transform: ${(props) => (props.isOpen ? "rotate(45deg)" : "rotate(0)")};

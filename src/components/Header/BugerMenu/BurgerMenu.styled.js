@@ -8,7 +8,7 @@ export const StyledMenu = styled.nav`
   width: 100vw;
   position: fixed;
   background-color: ${colors.green};
-  z-index: 0;
+  z-index: 15;
   padding: 80px 15px 15px 15px;
 
   transition: transform 0.3s ease-in-out;

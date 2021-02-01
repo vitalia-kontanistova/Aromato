@@ -2,8 +2,8 @@ import React from "react";
 import css from "./RegForm.module.css";
 import * as yup from "yup";
 import { Form, Formik } from "formik";
-import CustomInput from "../CustomInput/CustomInput";
-import MaskedTextInput from "../MaskedTextInput/MaskedTextInput";
+import CustomInput from "./CustomInput/CustomInput";
+import MaskedTextInput from "./MaskedTextInput/MaskedTextInput";
 
 const RegForm = (props) => {
   const phoneNumberMask = [
@@ -34,10 +34,8 @@ const RegForm = (props) => {
     name: "Выберете имя подлинее",
     email: "Почта введена некорректно",
     usedEmail: "Введеная почта уже используется",
-    phone: "Похоже Вы неверно ввели номер телефона",
-    pass: "Пароль должен быть хотя бы 6 символов",
-    // passNum: "Пароль должен содержать хотя бы одну цифру",
-    // passUpper: "Пароль должен содержать хотя бы одну заглавную букву",
+    phone: "Телефон введен некорректно",
+    pass: "Пароль должен быть длинее 5 символов",
     confirmPass: "Пароли должны совпадать",
   };
 
@@ -63,7 +61,6 @@ const RegForm = (props) => {
             .string()
             .matches(phoneRegExp, errors.phone)
             .required(errors.required),
-          /*password: yup.string().min(6, errors.pass).matches("[\\d]{1,}", errors.passNum).matches("[A-ZА-Я]{1,}",errors.passUpper).required(errors.required),*/
           password: yup.string().min(6, errors.pass).required(errors.required),
           confirmPass: yup
             .string()

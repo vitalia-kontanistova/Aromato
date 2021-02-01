@@ -1,0 +1,131 @@
+.howItWorks {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: var(--content-landing-padding-top-max);
+  color: var(--green);
+}
+.subtitle {
+  font-size: var(--subtitle-fs-max);
+  line-height: var(--subtitle-lh-max);
+  text-align: center;
+}
+.decor {
+  display: block;
+  width: 250px;
+  margin: 0 auto;
+}
+.portion {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 25px;
+}
+.step {
+  max-width: 385px;
+  display: flex;
+}
+.stepNum {
+  min-width: 35px;
+  height: 35px;
+  border: 2px solid var(--green);
+  border-radius: 50%;
+  font-size: 24px;
+  line-height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+.stepText {
+  max-width: 340px;
+  font-size: 24px;
+  line-height: 28px;
+}
+.stepText span {
+  font-size: 32px;
+  line-height: 37px;
+  display: inline-block;
+  width: 100%;
+}
+.bg {
+  display: none;
+}
+.hidden {
+  display: none;
+}
+@media (max-width: 1025px) {
+  .portion {
+    min-width: 100%;
+    display: block;
+    padding-top: 10px;
+  }
+  .step {
+    max-width: 100%;
+    margin-top: 10px;
+  }
+  .stepText {
+    max-width: 100%;
+  }
+}
+@media (max-width: 570px) {
+  .howItWorks {
+    padding-top: var(--content-padding-top-570px);
+  }
+  .subtitle {
+    font-size: var(--title-fs-570px);
+    line-height: var(--title-lh-570px);
+  }
+  .decor {
+    width: 150px;
+    margin-top: 3px;
+  }
+  .portion {
+    width: 100%;
+    display: block;
+    padding-top: var(--content-padding-top-570px);
+  }
+  .step {
+    display: block;
+  }
+  .stepNum {
+    min-width: 30px;
+    max-width: 30px;
+    height: 30px;
+    font-size: 18px;
+    line-height: 21px;
+    margin: 0 auto;
+  }
+  .stepText {
+    max-width: 85%;
+    min-width: 290px;
+    margin: 0 auto;
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+  }
+  .stepText span {
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+  }
+  .arrrow {
+    display: block;
+    margin: 15px auto;
+  }
+  .bg {
+    display: block;
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    z-index: -50;
+    opacity: var(--bg-opacity);
+    top: 150px;
+    pointer-events: none;
+  }
+  .hidden {
+    display: none;
+  }
+}
