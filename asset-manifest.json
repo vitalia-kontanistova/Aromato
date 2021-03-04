@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Aromato/static/css/main.6f473d4d.chunk.css",
-    "main.js": "/Aromato/static/js/main.33966186.chunk.js",
-    "main.js.map": "/Aromato/static/js/main.33966186.chunk.js.map",
+    "main.js": "/Aromato/static/js/main.af59aae5.chunk.js",
+    "main.js.map": "/Aromato/static/js/main.af59aae5.chunk.js.map",
     "runtime-main.js": "/Aromato/static/js/runtime-main.8ba981a8.js",
     "runtime-main.js.map": "/Aromato/static/js/runtime-main.8ba981a8.js.map",
     "static/css/2.81616ae1.chunk.css": "/Aromato/static/css/2.81616ae1.chunk.css",
@@ -33,6 +33,6 @@
     "static/css/2.81616ae1.chunk.css",
     "static/js/2.7589dd6c.chunk.js",
     "static/css/main.6f473d4d.chunk.css",
-    "static/js/main.33966186.chunk.js"
+    "static/js/main.af59aae5.chunk.js"
   ]
 }
